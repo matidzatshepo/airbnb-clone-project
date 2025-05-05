@@ -41,6 +41,68 @@ A containerization platform used to package the application and its dependencies
 ### 🔁 CI/CD Pipelines
 Automated processes that handle building, testing, and deploying the application. Helps maintain code quality and streamline deployments.
 
+## 🗄️ Database Design
+
+The database schema is structured to support all core Airbnb functionalities such as user registration, property listings, bookings, payments, and reviews.
+
+### 📘 Entities and Relationships
+
+#### 1. **Users**
+- `id`: Unique identifier for the user
+- `name`: Full name of the user
+- `email`: Email address (used for login)
+- `password`: Hashed password
+- `is_host`: Boolean flag to differentiate between guests and hosts  
+🔗 **Relationships**: A user can own multiple properties, create bookings, and leave reviews.
+
+#### 2. **Properties**
+- `id`: Unique identifier for the property
+- `owner_id`: Foreign key linking to the User who owns the property
+- `title`: Property title or headline
+- `description`: Details about the property
+- `price_per_night`: Cost to book per night  
+🔗 **Relationships**: A property belongs to one user (host), can have multiple bookings and reviews.
+
+#### 3. **Bookings**
+- `id`: Unique booking identifier
+- `user_id`: Foreign key referencing the guest who made the booking
+- `property_id`: Foreign key referencing the property
+- `check_in_date`: Booking start date
+- `check_out_date`: Booking end date  
+🔗 **Relationships**: A booking is made by a user for a specific property.
+
+#### 4. **Payments**
+- `id`: Unique payment identifier
+- `booking_id`: Foreign key linking the payment to a booking
+- `amount`: Total amount paid
+- `payment_method`: e.g., credit card, PayPal
+- `status`: Payment status (pending, completed, failed)  
+🔗 **Relationships**: Each payment is associated with one booking.
+
+#### 5. **Reviews**
+- `id`: Unique review identifier
+- `user_id`: Foreign key linking to the reviewer
+- `property_id`: Foreign key referencing the reviewed property
+- `rating`: Numerical rating (e.g., 1–5)
+- `comment`: Text feedback  
+🔗 **Relationships**: A user can leave a review for a property after booking it.
+
+### 🔗 Entity Relationship Summary
+- A **User** can:
+  - own multiple **Properties**
+  - make multiple **Bookings**
+  - write multiple **Reviews**
+
+- A **Property**:
+  - belongs to one **User**
+  - can have multiple **Bookings** and **Reviews**
+
+- A **Booking**:
+  - belongs to one **User** and one **Property**
+  - has one associated **Payment**
+
+- A **Review**:
+  - belongs to one **User** and one **Property**
 
 ## 👥 Team Roles
 
