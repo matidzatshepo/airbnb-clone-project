@@ -154,7 +154,14 @@ Continuous Integration (CI) and Continuous Deployment (CD) are essential practic
 
 ### 🛠️ CI/CD Tools
 - **GitHub Actions**: GitHub Actions allows us to automate workflows such as running tests, building images, and deploying the project to various environments.
-- **Docker**: Docker helps to containerize the application, ensuring consistency across different environments (development
+- **Docker**: Docker helps to containerize the application, ensuring consistency across different environments (development, staging, production) and simplifying the deployment process.
+- **Jenkins**: Jenkins is another popular CI/CD tool that can help automate tasks such as code building, testing, and deployment pipelines.
+
+### 📈 Importance for the Project
+- **Automated Testing**: With CI, tests are run automatically whenever code changes are pushed, ensuring that bugs are caught early.
+- **Faster Deployment**: CD allows code changes to be automatically deployed to production, reducing the time between development and production.
+- **Consistency**: Using containers like Docker ensures that the application runs consistently across all environments, minimizing deployment issues.
+
 
 ## 👥 Team Roles
 
