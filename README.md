@@ -104,6 +104,30 @@ The database schema is structured to support all core Airbnb functionalities suc
 - A **Review**:
   - belongs to one **User** and one **Property**
 
+## 🔧 Feature Breakdown
+
+The Airbnb Clone project consists of several key features that together form the backbone of the platform. Below is a breakdown of the main features:
+
+### 👤 User Management
+The user management system allows users to register, log in, and manage their profiles. It includes functionality for both guests and hosts, providing features like password management and user authentication.
+
+### 🏡 Property Management
+Hosts can create, update, and delete property listings. This feature supports the ability to list essential details like property title, description, price, and availability, helping users browse and book properties.
+
+### 🗓️ Booking System
+The booking system enables users to book available properties. This feature handles the creation, modification, and cancellation of bookings, including check-in and check-out dates. It ensures that users can reserve properties according to their needs.
+
+### 💳 Payment Processing
+This feature handles all payment transactions for bookings. It ensures that payments are processed securely and accurately, and helps users complete their bookings by confirming payments through various methods.
+
+### ✍️ Review System
+The review system allows users to leave reviews and ratings for properties they have stayed at. This feature promotes trust and transparency by enabling users to share feedback, helping future guests make informed decisions.
+
+### 🗃️ Database Optimizations
+To ensure high performance, the database is optimized using indexing and caching strategies. These optimizations help improve data retrieval speeds, reduce load times, and ensure smooth user interactions with the system.
+
+
+
 ## 👥 Team Roles
 
 This project is a collaborative effort involving specialists with distinct responsibilities to ensure development, deployment, and maintenance of a high-quality backend system.
