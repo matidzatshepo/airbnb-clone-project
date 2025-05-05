@@ -126,7 +126,27 @@ The review system allows users to leave reviews and ratings for properties they 
 ### 🗃️ Database Optimizations
 To ensure high performance, the database is optimized using indexing and caching strategies. These optimizations help improve data retrieval speeds, reduce load times, and ensure smooth user interactions with the system.
 
+## 🔐 API Security
 
+Security is a critical aspect of any backend system, especially for applications like the Airbnb Clone that handle sensitive data, payments, and user interactions. Below are the key security measures that will be implemented:
+
+### 🔑 Authentication
+User authentication will ensure that only registered users can access their data and perform actions on the platform. By using techniques such as token-based authentication (JWT), we can securely verify users' identities during every API request.
+
+### 🚫 Authorization
+Authorization ensures that authenticated users only have access to the features and data they are permitted to. This includes enforcing role-based access control (RBAC), where users with specific roles (e.g., hosts, guests) can access different endpoints based on their privileges.
+
+### 🛡️ Rate Limiting
+To prevent abuse of the API, rate limiting will be implemented. This ensures that users and third-party systems cannot overwhelm the server with too many requests in a short period, reducing the risk of denial-of-service attacks.
+
+### 🔒 Data Protection
+Sensitive user information, such as passwords and payment details, will be securely stored and transmitted. Passwords will be hashed using strong algorithms (e.g., bcrypt), and all sensitive data will be encrypted using secure protocols (e.g., HTTPS) to prevent data breaches.
+
+### 💳 Payment Security
+Since the system processes payments, securing payment transactions is a top priority. Integration with trusted payment gateways (e.g., Stripe, PayPal) ensures that payments are securely processed, preventing fraud and protecting users' financial information.
+
+### 🏠 Property Data Security
+Protecting the data related to property listings and bookings ensures that malicious users cannot tamper with property details or booking information. Access control and input validation will be used to ensure that only authorized users can modify their property details.
 
 ## 👥 Team Roles
 
@@ -150,7 +170,6 @@ Designs API structures (REST and GraphQL) for consistency and scalability. Defin
 ---
 
 
----
 
 > 📁 **Repository:** [`airbnb-clone-project`](https://github.com/matidzatshepo/airbnb-clone-project)
 
