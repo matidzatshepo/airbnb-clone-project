@@ -148,6 +148,14 @@ Since the system processes payments, securing payment transactions is a top prio
 ### 🏠 Property Data Security
 Protecting the data related to property listings and bookings ensures that malicious users cannot tamper with property details or booking information. Access control and input validation will be used to ensure that only authorized users can modify their property details.
 
+## 🚀 CI/CD Pipeline
+
+Continuous Integration (CI) and Continuous Deployment (CD) are essential practices that automate the process of testing, building, and deploying code. They help ensure faster, more reliable software delivery, reducing manual intervention and minimizing human error.
+
+### 🛠️ CI/CD Tools
+- **GitHub Actions**: GitHub Actions allows us to automate workflows such as running tests, building images, and deploying the project to various environments.
+- **Docker**: Docker helps to containerize the application, ensuring consistency across different environments (development
+
 ## 👥 Team Roles
 
 This project is a collaborative effort involving specialists with distinct responsibilities to ensure development, deployment, and maintenance of a high-quality backend system.
